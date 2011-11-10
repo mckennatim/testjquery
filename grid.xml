@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="gridtest.xsl"?> 
+<data>
+	<action>FEED_GRID_PAGE</action>
+	<params>
+		<returned_page>2</returned_page>
+		<total_pages>6</total_pages>
+		<items_count>17</items_count>
+		<previous_page>1</previous_page>
+		<next_page>3</next_page>
+	</params>
+	<grid>
+		<row>
+			<id>850</id>
+			<word>curtail</word>
+			<def>To cut short or reduce</def>
+			<sentence>After congress thwarted an attempt to establish a legislative program that would curtail the civil rights of blacks, his administration simply pursued its racial agenda through other avenues, using his presidential powers to remove blacks from roles they had traditionally held and preventing black federal employees from using the same bathrooms, cafeterias, and workspaces as white employees.</sentence>
+			<loc/>
+			<pos>tr.v.</pos>
+			<studentdef/>
+			<studentuse/>
+			<source>wilson</source>
+			<section>1</section>
+			<topic>racism</topic>
+			<unit>racism</unit>
+			<course>hum3</course>
+			<submitterID>098391</submitterID>
+			<ok>1</ok>
+		</row>
+		<row>
+			<id>851</id>
+			<word>vehement</word>
+			<def>Characterized by forcefulness of expression or intensity of emotion or conviction; fervid</def>
+			<sentence>According to Lies My Teacher Told Me, by James W. Loewen, there is strong evidence that Woodrow Wilson was, as opposed to the image of the progressive idealist we are so often given, in fact a vehement white supremacist who pursued highly anti-democratic and even inhumane policies both in America and around the world.</sentence>
+			<loc/>
+			<pos>adj.</pos>
+			<studentdef/>
+			<studentuse/>
+			<source>wilson</source>
+			<section>1</section>
+			<topic>racism</topic>
+			<unit>racism</unit>
+			<course>hum3</course>
+			<submitterID>098391</submitterID>
+			<ok>1</ok>
+		</row>
+		<row>
+			<id>852</id>
+			<word>languishing</word>
+			<def>To be or become weak or feeble; lose strength or vigor</def>
+			<sentence>He was arrested, tried, convicted, and sentenced to 10 years in prison according to the provisions of the Sedition Act. He remained in prison, languishing, his conviction having been upheld by the Supreme Court, until Warren G. Harding became president.</sentence>
+			<loc/>
+			<pos>intr.v.</pos>
+			<studentdef/>
+			<studentuse/>
+			<source>wilson</source>
+			<section>1</section>
+			<topic>racism</topic>
+			<unit>racism</unit>
+			<course>hum3</course>
+			<submitterID>098391</submitterID>
+			<ok>1</ok>
+		</row>
+	</grid>
+</data>
