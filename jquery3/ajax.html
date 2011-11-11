@@ -25,9 +25,9 @@
 			$(document).ready( function () {
            $('#example').dataTable({
                                       "bProcessing": true,
-                                      "sAjaxSource": "getData.php",
+                                      "sAjaxSource": "getData2.php",
 					aoColumns: [ { "bVisible": false} , null, null, null, null ]
-                                    }
+                                 }
                                     ).makeEditable({
 									sUpdateURL: "UpdateData.php",
                     							sAddURL: "AddData.php",
@@ -112,7 +112,7 @@
 			$(document).ready( function () {
            $('#example').dataTable({
                                       "bProcessing": true,
-                                      "sAjaxSource": "getData.php"
+                                      "sAjaxSource": "getData2.php"
                                       }
                                     ).makeEditable();
 			} );

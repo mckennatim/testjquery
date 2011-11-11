@@ -8,29 +8,25 @@ fb('how are you today');
 
 $oid =145;
 
-$db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
-/* check connection */
-if (mysqli_connect_errno()) {
-	printf("Connect failed: %s\n", mysqli_connect_error());
-	exit();
-}	
+mysql_connect (DB_HOST, DB_USER, DB_PASSWORD) or die("can't connect");
+mysql_select_db (DB_DATABASE) or die("db unavailable");	
 
-$qry = "SELECT *
+$qry = "SELECT `rid`, `oid`, `role`, `roledesc`, `num`
 FROM roles  
 WHERE oid='$oid'";
 //fb($qry);
-$roler = $db->query($qry) or die("Dead finding units uid");
+$roler = mysql_query($qry) or die("Dead finding units uid");
 
 echo jsonJQ($roler);
 
 function jsonJQ($r){
 	$js = '{ "aaData": [';
-	while ($arow = $r->fetch_assoc()) 
+	while ($arow = mysql_fetch_row($r)) 
 	{
 		$js.=' [';
 		foreach($arow as $key=>$val){
 			$js.='"'.$val.'",';
-			//fb($val);
+			fb($val);
 		}
 		$js = substr($js,0,-1);
 		$js.='], ';		
