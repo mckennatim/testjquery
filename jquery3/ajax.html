@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 
 	
@@ -43,8 +43,7 @@
 			<a href="index.html">Home</a>
 			<a href="http://code.google.com/p/jquery-datatables-editable/wiki/Overview">Wiki</a> 
 			<h1 class="full_width big">
-	     		Editable DataTable example - ajax data source
-			</h1>
+	     		Editable DataTable example - ajax data source</h1>
 			<h2>Preamble</h2>
 			<p>
            DataTable Editable plugin works with DataTables that dinamically read cells 
@@ -55,24 +54,15 @@
 			<div id="demo">
  <form id="formAddNewRow" action="#" title="Add new record">
         <input type="hidden" name="rid" id="id" rel="0" value="DATAROWID" />
-        <label for="browser">Browser</label><br />
-	<input type="text" name="browser" id="browser" rel="1" />
+        <input type="hidden" name="oid" id="oid" rel="1" value="145" />
+        <label for="name">role</label><br />
+	<input type="text" name="role" id="role" rel="2" />
         <br />
-        <label for="platforms">Platform(s)</label><br />
-	<textarea name="platforms" id="platforms" rel="2"></textarea>
+        <label for="name">roledesc</label><br />
+	<textarea name="roledesc" id="roledesc" rel="3"></textarea>
         <br />
-        <label for="version">Engine version</label><br />
-	<select name="version" id="version" rel="3">
-                <option>1.5</option>
-                <option>1.7</option>
-                <option>1.8</option>
-        </select>
-        <br />
-        <label for="grade">CSS grade</label><br />
-		<input type="radio" name="grade" value="A" rel="4"> First<br>
-		<input type="radio" name="grade" value="B" rel="4"> Second<br>
-		<input type="radio" name="grade" value="C" checked rel="4"> Third
-        <br />
+        <label for="name">num</label><br />
+	<input type="text" name="num" id="num" rel="4" />
 </form>
 <div class="add_delete_toolbar" />
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
