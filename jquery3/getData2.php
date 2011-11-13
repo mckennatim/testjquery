@@ -20,18 +20,18 @@ $roler = mysql_query($qry) or die("Dead finding units uid");
 echo jsonJQ($roler);
 
 function jsonJQ($r){
-	$js = '{ "aaData": [';
-	while ($arow = mysql_fetch_row($r)) 
-	{
-		$js.=' [';
-		foreach($arow as $key=>$val){
-			$js.='"'.$val.'",';
-			fb($val);
-		}
-		$js = substr($js,0,-1);
-		$js.='], ';		
-	}	
-	$js=substr($js,0,-2).'] }';
-	return $js;
+$js = '{ "aaData": [';
+while ($arow = mysql_fetch_row($r)) 
+{
+	$js.=' [';
+	foreach($arow as $key=>$val){
+		$js.='"'.$val.'",';
+		fb($val);
+	}
+	$js = substr($js,0,-1);
+	$js.='], ';		
+}	
+$js=substr($js,0,-2).'] }';
+return $js;
 }
 ?>
